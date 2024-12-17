@@ -1,0 +1,35 @@
+/* Navbar.module.css */
+.containerGrid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between picture and elements */
+    padding: 6rem;
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+@media (max-width: 1024px) {
+    .containerGrid {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerGrid {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between the picture and right elements */
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between the buttons and icons */
+}
