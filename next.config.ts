@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/BenMohaJr.github.io',
-  assetPrefix: '/BenMohaJr.github.io/',
+const nextConfig = {
+  output: "export",  // <=== enables static exports
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;
