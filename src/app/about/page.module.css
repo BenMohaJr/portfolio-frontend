@@ -1,0 +1,50 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin-left: 10rem;
+}
+
+.header{
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 4rem;
+    
+}
+
+.divider{
+    width: 50rem;
+    height: 0.1rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.resumeRow {
+    display: flex;
+    align-items: center;
+}
+
+.resume{
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.arrowDown {
+    font-size: 2rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -0.2rem;
+}
+
+@media (max-width: 1024px){
+    .divider{
+        width: 40rem;
+    }
+}
+
+@media (max-width: 768px){
+    .divider {
+        width: 35rem;
+    }
+}

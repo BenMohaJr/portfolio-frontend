@@ -3,13 +3,22 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <div className={styles.containerGrid}>
       {/* Picture on the left */}
       <div className={styles.headerLeft}>
-        <Image src="/LBM.svg" alt="LBM logo" width={200} height={30} />
+        <Link href="/">
+          <Image
+            priority
+            src="/LBM.svg"
+            alt="LBM logo"
+            width={200}
+            height={30}
+          />
+        </Link>
       </div>
 
       {/* Buttons and icons on the right */}
